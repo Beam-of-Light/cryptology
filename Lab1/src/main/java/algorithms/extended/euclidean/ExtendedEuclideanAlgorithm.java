@@ -4,11 +4,6 @@ import java.math.BigInteger;
 
 public class ExtendedEuclideanAlgorithm {
 
-    /*
-     Розширений алгоритм Евкліда.
-     Рахує НСД чисел a i b, а також коефіцієнти х та у, що задовільняють рівняння Безу
-     a*x + b*y = НСД(a, b), де НСД - це найбільший спільний дільник a і b.
-    */
     public static BezoutIdentity calculateGcd(BigInteger a, BigInteger b){
         BezoutIdentity identity = new BezoutIdentity(a, b);
 

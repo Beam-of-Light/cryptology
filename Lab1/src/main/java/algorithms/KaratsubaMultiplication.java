@@ -11,16 +11,12 @@ public class KaratsubaMultiplication {
 
         bitNum = (bitNum / 2) + (bitNum % 2);
 
-    /*
-     x = a + b*2^bitNum
-     y = c + d*2^bitNum
-    */
+
         BigInteger b = x.shiftRight(bitNum);
         BigInteger a = x.subtract(b.shiftLeft(bitNum));
         BigInteger d = y.shiftRight(bitNum);
         BigInteger c = y.subtract(d.shiftLeft(bitNum));
 
-        // x * y = a * c + ((a+b)*(c+d) — a*c — b*d) * 2^m + b*d*2^(2*bitNum)
         BigInteger ac = multiply(a, c);
         BigInteger bd = multiply(b, d);
         BigInteger abcd = multiply(a.add(b), c.add(d));

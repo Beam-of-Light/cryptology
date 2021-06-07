@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PrimalityTestMillerRabinTest {
 
     @Test
-    void isPrime() throws Exception {
+    void isPrime() {
         BigInteger[] primeList =
                 new BigInteger[] {
                         new BigInteger("5"),

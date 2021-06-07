@@ -2,10 +2,6 @@ package algorithms.extended.euclidean;
 
 import java.math.BigInteger;
 
-/*
-  Клас відтворює рівняння Безу
-  a*x + b*y = НСД(a, b), де НСД - це найбільший спільний дільник чисел a та b.
-*/
 public class BezoutIdentity {
     private BigInteger a;
     private BigInteger b;
