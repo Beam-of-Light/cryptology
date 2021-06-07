@@ -97,7 +97,7 @@ public class NybergRueppelAlgo {
      */
     public static Signature sign(int m) {
         int k = random.nextInt(Q - 1) + 1;
-        System.out.println("k: " + k);
+        // System.out.println("k: " + k);
 
         // int k = 45;
         int R = pow(G, k, P) % P;
